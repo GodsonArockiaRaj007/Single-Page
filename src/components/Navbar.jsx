@@ -12,8 +12,8 @@ const Navbar = () => {
               <h1 className="bg-white rounded-3xl text-blue-600 font-bold p-3 text-2xl ">Soft Logic</h1>
         </div>
         <div className="flex gap-10">
-            <NavLink to="/" className={({ isActive }) =>isActive? "bg-blue-900 p-2 rounded-4xl text-white": "bg-black p-2 rounded-4xl text-white"}>Home</NavLink>
-             <NavLink to="/tasks" className={({ isActive }) =>isActive? "bg-blue-900 p-2 rounded-4xl text-white": "bg-black p-2 rounded-4xl text-white"}>Tasks</NavLink>
+            <NavLink to="/" className={({ isActive }) =>isActive? "bg-purple-800 p-2 rounded-4xl text-white": " p-2 rounded-4xl text-white"}>Home</NavLink>
+             <NavLink to="/tasks" className={({ isActive }) =>isActive? "bg-purple-800 p-2 rounded-4xl text-white": " p-2 rounded-4xl text-white"}>Tasks</NavLink>
            
         </div>
     </div>

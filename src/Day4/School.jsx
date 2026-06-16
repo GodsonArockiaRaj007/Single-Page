@@ -3,7 +3,7 @@ import SchoolStats from "./SchoolStats"
 const School = ({schools}) => {
   return (
     <>
-    <div className="bg-blue-300 ">
+    <div className="bg-purple-800 ">
         <div>
              <div className="" >
             <h1 className="text-center font-bold text-3xl">Task1</h1>
