@@ -12,6 +12,8 @@ const Tasks = () => {
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110 " to='https://routing-seven-pied.vercel.app/'>Day2</Link>
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110 " to='/Day3'>Day3</Link>
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day4'>Day4</Link>
+            <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day5'>Day5</Link>
+
         </div>
     </div>
     </>
