@@ -7,6 +7,14 @@ import Layouts from '../layouts/Layouts'
 import Tasks from '../pages/Tasks'
 import Day5 from '../pages/Day5'
 import Day6 from '../pages/Day6'
+import Day2 from '../pages/Day2'
+import About from '../Day2/pages/About'
+import Contact from "../Day2/pages/Contact"
+import Services from "../Day2/pages/Services"
+import Login from "../Day2/pages/Login"
+import Register from "../Day2/pages/Register"
+import Home2 from '../Day2/pages/Home2'
+import Day2Layouts from '../layouts/Day2Layouts'
 const AppRoutes = () => {
   return (
     <>
@@ -15,13 +23,25 @@ const AppRoutes = () => {
           <Route element={<Layouts/>}>
 <Route path='/' element={<Home/>}></Route>
 <Route path='/Day1' element={<Day1/>}></Route>
+            
             <Route path='/Day3' element={<Day3/>}></Route>
             <Route path='/Day4' element={<Day4/>}></Route>
             <Route path='/Day5' element={<Day5/>}></Route>
             <Route path='/Day6' element={<Day6/>}></Route>
             <Route path='/tasks' element={<Tasks/>}></Route>
           </Route>
+          <Route element={<Day2Layouts/>}>
+    <Route path='/about' element={<About/>}></Route>
+     <Route path='/contact' element={<Contact/>}></Route>
+            <Route path='/services' element={<Services/>}></Route>
+          </Route>
+            <Route path='/Day2' element={<Day2/>}></Route>
             
+             
+            
+            <Route path="/login" element={<Login/>} />
+            <Route path='/register' element={<Register/>}></Route>
+            <Route path='/home ' element={<Home2/>}> </Route>
             
         </Routes>
     </div>

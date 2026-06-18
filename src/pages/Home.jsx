@@ -9,9 +9,9 @@ const Home = () => {
           <h1 className="font-bold">**Read carefully before using this webpage** </h1>
           <p>1.To see Tasks click on the Task button in the navbar. </p>
           <p>2.To comback to the home page click on the Home button in the Navbar.  </p>
-          <p>3.Day2 alone i have deployed seperately on vercel and I used that link. </p>
-          <p>4.So for Day2 the navbar will be sepearte and if you want to come back to the home You need to use back button in the browser.</p>
-          <p>5.This page only conatins my react tasks</p>
+          <p>3.For Day2 the navbar will be sepearte and if you want to come back to the home You need to use home button and other buttons are only for day 2.</p>
+          <p>4.This page only conatins my react tasks</p>
+          <p></p>
         </div>
     </div>
     </div>
