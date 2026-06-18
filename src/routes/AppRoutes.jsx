@@ -6,6 +6,7 @@ import Day1 from '../pages/Day1'
 import Layouts from '../layouts/Layouts'
 import Tasks from '../pages/Tasks'
 import Day5 from '../pages/Day5'
+import Day6 from '../pages/Day6'
 const AppRoutes = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const AppRoutes = () => {
             <Route path='/Day3' element={<Day3/>}></Route>
             <Route path='/Day4' element={<Day4/>}></Route>
             <Route path='/Day5' element={<Day5/>}></Route>
+            <Route path='/Day6' element={<Day6/>}></Route>
             <Route path='/tasks' element={<Tasks/>}></Route>
           </Route>
             
