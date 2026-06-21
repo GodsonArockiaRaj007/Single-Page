@@ -15,33 +15,39 @@ import Login from "../Day2/pages/Login"
 import Register from "../Day2/pages/Register"
 import Home2 from '../Day2/pages/Home2'
 import Day2Layouts from '../layouts/Day2Layouts'
+import Day7 from "../pages/Day7"
+import Array from '../Day7/Array'
+import Object from "../Day7/Object"
+import ArrayofObject from '../Day7/ArrayofObject'
 const AppRoutes = () => {
   return (
     <>
     <div>
         <Routes>
           <Route element={<Layouts/>}>
-<Route path='/' element={<Home/>}></Route>
-<Route path='/Day1' element={<Day1/>}></Route>
-            
+            <Route path='/' element={<Home/>}></Route>
+            <Route path='/Day1' element={<Day1/>}></Route>
             <Route path='/Day3' element={<Day3/>}></Route>
             <Route path='/Day4' element={<Day4/>}></Route>
             <Route path='/Day5' element={<Day5/>}></Route>
             <Route path='/Day6' element={<Day6/>}></Route>
+            <Route path='/Day7' element={<Day7/>}></Route>
             <Route path='/tasks' element={<Tasks/>}></Route>
           </Route>
           <Route element={<Day2Layouts/>}>
-    <Route path='/about' element={<About/>}></Route>
-     <Route path='/contact' element={<Contact/>}></Route>
+            <Route path='/about' element={<About/>}></Route>
+            <Route path='/contact' element={<Contact/>}></Route>
             <Route path='/services' element={<Services/>}></Route>
-          </Route>
-            <Route path='/Day2' element={<Day2/>}></Route>
-            
-             
+            </Route>
+          <Route path='/Day2' element={<Day2/>}></Route>
             
             <Route path="/login" element={<Login/>} />
             <Route path='/register' element={<Register/>}></Route>
             <Route path='/home ' element={<Home2/>}> </Route>
+            <Route path='/array' element={<Array/>}/>
+            <Route path='/object' element={<Object/>}/>
+            <Route path='/arrayofobject' element={<ArrayofObject/>}/>
+            
             
         </Routes>
     </div>
