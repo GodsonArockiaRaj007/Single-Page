@@ -20,6 +20,8 @@ const Navbar = () => {
         </div>
         <div className="flex gap-10">
             <NavLink to="/" className={({ isActive }) =>isActive? "bg-blue-900 p-2 rounded-4xl text-white": "bg-black p-2 rounded-4xl text-white"}>Home</NavLink>
+                        <NavLink to="/tasks" className={({ isActive }) =>isActive? "bg-blue-900 p-2 rounded-4xl text-white": "bg-black p-2 rounded-4xl text-white"}>Tasks</NavLink>
+
             <NavLink to="/about" className={({ isActive }) =>isActive? "bg-blue-900 p-2 rounded-4xl text-white": "bg-black p-2 rounded-4xl text-white"}>About</NavLink>
             <NavLink to="/contact" className={({ isActive }) =>isActive? "bg-blue-900 p-2 rounded-4xl text-white": "bg-black p-2 rounded-4xl text-white"}>Contact</NavLink>
             <NavLink to="/services" className={({ isActive }) =>isActive? "bg-blue-900 p-2 rounded-4xl text-white": "bg-black p-2 rounded-4xl text-white"}>Services</NavLink>

@@ -19,6 +19,7 @@ import Day7 from "../pages/Day7"
 import Array from '../Day7/Array'
 import Object from "../Day7/Object"
 import ArrayofObject from '../Day7/ArrayofObject'
+import Day8 from "../pages/Day8"
 const AppRoutes = () => {
   return (
     <>
@@ -32,6 +33,8 @@ const AppRoutes = () => {
             <Route path='/Day5' element={<Day5/>}></Route>
             <Route path='/Day6' element={<Day6/>}></Route>
             <Route path='/Day7' element={<Day7/>}></Route>
+            <Route path='/Day8' element={<Day8/>}></Route>
+
             <Route path='/tasks' element={<Tasks/>}></Route>
           </Route>
           <Route element={<Day2Layouts/>}>
