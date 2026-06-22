@@ -26,7 +26,7 @@ const Task18 = () => {
   return (
      <>
     <div className="bg-white rounded-2xl  flex  flex-col gap-5 w-150 text-center mx-auto mt-15 p-10">
-        <h1 className="font-bold text-3xl">Task17</h1>
+        <h1 className="font-bold text-3xl">Task18</h1>
         <div className="space-y-3">
         <label htmlFor="name" className="w-30 inline-block" >Enter Name:</label>
         <input type="text" id="name" className="border-2 rounded" onChange={handleName} value={name}/> <br />

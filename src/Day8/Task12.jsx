@@ -27,7 +27,7 @@ const Task12 = () => {
         {full.length>0 && 
             <div>
                 <p className="font-bold">Username: {first}</p>
-                <p className="font-bold">Username: {last}</p>
+                <p className="font-bold">Password: {last}</p>
             </div>
         }
     </div>

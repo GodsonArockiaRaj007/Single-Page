@@ -16,11 +16,13 @@ import Task15 from "../Day8/Task15"
 import Task16 from "../Day8/Task16"
 import Task17 from "../Day8/Task17"
 import Task18 from "../Day8/Task18"
+import Task19 from "../Day8/Task19"
+import Task20 from "../Day8/Task20"
 const Day8 = () => {
   return (
     <>
 
-   <div className="bg-purple-800 min-h-screen">
+   <div className="bg-purple-800 min-h-screen p-20">
      < div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <Task1/>
     <Task2/>
@@ -42,6 +44,8 @@ const Day8 = () => {
    <Task16/>
    <Task17/>
    <Task18/>
+   <Task19/>
+   <Task20/>
    </div>
    </>
   )
