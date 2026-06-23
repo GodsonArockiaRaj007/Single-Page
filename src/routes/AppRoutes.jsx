@@ -20,6 +20,7 @@ import Array from '../Day7/Array'
 import Object from "../Day7/Object"
 import ArrayofObject from '../Day7/ArrayofObject'
 import Day8 from "../pages/Day8"
+import Day9 from '../pages/Day9'
 const AppRoutes = () => {
   return (
     <>
@@ -34,24 +35,22 @@ const AppRoutes = () => {
             <Route path='/Day6' element={<Day6/>}></Route>
             <Route path='/Day7' element={<Day7/>}></Route>
             <Route path='/Day8' element={<Day8/>}></Route>
+            <Route path='/Day9' element={<Day9/>}></Route>
 
             <Route path='/tasks' element={<Tasks/>}></Route>
           </Route>
           <Route element={<Day2Layouts/>}>
-            <Route path='/about' element={<About/>}></Route>
-            <Route path='/contact' element={<Contact/>}></Route>
-            <Route path='/services' element={<Services/>}></Route>
-            </Route>
+              <Route path='/about' element={<About/>}></Route>
+              <Route path='/contact' element={<Contact/>}></Route>
+              <Route path='/services' element={<Services/>}></Route>
+          </Route>
           <Route path='/Day2' element={<Day2/>}></Route>
-            
-            <Route path="/login" element={<Login/>} />
-            <Route path='/register' element={<Register/>}></Route>
-            <Route path='/home ' element={<Home2/>}> </Route>
-            <Route path='/array' element={<Array/>}/>
-            <Route path='/object' element={<Object/>}/>
-            <Route path='/arrayofobject' element={<ArrayofObject/>}/>
-            
-            
+          <Route path="/login" element={<Login/>} />
+          <Route path='/register' element={<Register/>}></Route>
+          <Route path='/home ' element={<Home2/>}> </Route>
+          <Route path='/array' element={<Array/>}/>
+          <Route path='/object' element={<Object/>}/>
+          <Route path='/arrayofobject' element={<ArrayofObject/>}/>                      
         </Routes>
     </div>
     </>
