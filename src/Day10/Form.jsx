@@ -8,8 +8,14 @@ const Form = () => {
     }
     const handleUser=(e)=>{
         e.preventDefault()
+        if (userData.userName=="" || userData.userAge=="" || userData.userCity=="")
+            {alert("Fill all the data first")}
+        else
+        {
         setAllData((prev)=>[...prev,userData])
         setUserData({userName:"",userAge:"",userCity:""})
+        }
+        
     }
     const deleteData=(id)=>{
         setAllData(allData.filter((e)=>e !== id))
