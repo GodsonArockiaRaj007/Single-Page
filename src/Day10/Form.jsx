@@ -4,7 +4,7 @@ const Form = () => {
     const [userData,setUserData]=useState({userName:"",userAge:"",userCity:""})
     const [allData,setAllData]=useState([])
     const handleData=(e)=>{
-        setUserData({...userData,[e.target.name]:[e.target.value]})
+        setUserData({...userData,[e.target.name]:e.target.value})
     }
     const handleUser=(e)=>{
         e.preventDefault()
