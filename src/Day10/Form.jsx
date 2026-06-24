@@ -9,6 +9,7 @@ const Form = () => {
     const handleUser=(e)=>{
         e.preventDefault()
         setAllData((prev)=>[...prev,userData])
+        setUserData({userName:"",userAge:"",userCity:""})
     }
     const deleteData=(id)=>{
         setAllData(allData.filter((e)=>e !== id))
@@ -29,15 +30,15 @@ const Form = () => {
                 <tbody className="w-full">
                     <tr>
                     <td><label htmlFor="name" className=" font-bold text-2xl">Enter Name:</label></td>
-                    <td><input className="w-full px-4 py-2 border-2  rounded-xl " type="text" id="name" name="userName" onChange={handleData} /></td>
+                    <td><input className="w-full px-4 py-2 border-2  rounded-xl " type="text" value={userData.userName} id="name" name="userName" onChange={handleData} /></td>
                 </tr>
                  <tr>
                     <td><label htmlFor="age" className=" font-bold text-2xl">Enter Age:</label></td>
-                    <td><input className="w-full px-4 py-2 border-2  rounded-xl " type="text" id="age" name="userAge" onChange={handleData}  /></td>
+                    <td><input className="w-full px-4 py-2 border-2  rounded-xl " type="text" value={userData.userAge} id="age" name="userAge" onChange={handleData}  /></td>
                 </tr>
                  <tr>
                     <td><label htmlFor="city" className=" font-bold text-2xl">Enter City:</label></td>
-                    <td><input className="w-full px-4 py-2 border-2  rounded-xl " type="text" id="city" name="userCity" onChange={handleData}  /></td>
+                    <td><input className="w-full px-4 py-2 border-2  rounded-xl " type="text"  value={userData.userCity} id="city" name="userCity" onChange={handleData}  /></td>
                 </tr>
                 <tr>
                     <td></td>
