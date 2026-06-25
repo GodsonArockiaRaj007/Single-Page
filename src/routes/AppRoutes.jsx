@@ -22,6 +22,12 @@ import ArrayofObject from '../Day7/ArrayofObject'
 import Day8 from "../pages/Day8"
 import Day9 from '../pages/Day9'
 import Day10 from "../pages/Day10"
+import Day11 from '../pages/Day11'
+import StudentRegistration from '../Day11/StudentRegistration '
+import EmployeeDetails from '../Day11/EmployeeDetails'
+import ProductManagement from '../Day11/ProductManagement '
+import SchoolManagement from '../Day11/SchoolManagement'
+import UserProfile from '../Day11/UserProfile'
 const AppRoutes = () => {
   return (
     <>
@@ -38,8 +44,18 @@ const AppRoutes = () => {
             <Route path='/Day8' element={<Day8/>}></Route>
             <Route path='/Day9' element={<Day9/>}></Route>
             <Route path='/Day10' element={<Day10/>}></Route>
+            <Route path='/Day11' element={<Day11/>}></Route>
+
 
             <Route path='/tasks' element={<Tasks/>}></Route>
+
+
+            <Route path='/studentregistration' element={<StudentRegistration/>}/> 
+            <Route path='/employeedetails' element={<EmployeeDetails/>}/> 
+            <Route path='/productmanagement' element={<ProductManagement/>}/> 
+            <Route path='/schoolmanagement' element={<SchoolManagement/>}/> 
+            <Route path='/userprofile' element={<UserProfile/>}/> 
+
           </Route>
           <Route element={<Day2Layouts/>}>
               <Route path='/about' element={<About/>}></Route>
@@ -52,7 +68,9 @@ const AppRoutes = () => {
           <Route path='/home ' element={<Home2/>}> </Route>
           <Route path='/array' element={<Array/>}/>
           <Route path='/object' element={<Object/>}/>
-          <Route path='/arrayofobject' element={<ArrayofObject/>}/>                      
+          <Route path='/arrayofobject' element={<ArrayofObject/>}/>  
+                              
+                              
         </Routes>
     </div>
     </>

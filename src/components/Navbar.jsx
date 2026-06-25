@@ -1,6 +1,7 @@
-import {NavLink } from "react-router-dom"
+import {NavLink, useNavigate } from "react-router-dom"
 
 const Navbar = () => {
+  const navigate=useNavigate()
  
   return (
     <>
@@ -14,6 +15,8 @@ const Navbar = () => {
         <div className="flex gap-10">
             <NavLink to="/" className={({ isActive }) =>isActive? "bg-purple-800 p-2 rounded-4xl text-white": " p-2 rounded-4xl text-white"}>Home</NavLink>
              <NavLink to="/tasks" className={({ isActive }) =>isActive? "bg-purple-800 p-2 rounded-4xl text-white": " p-2 rounded-4xl text-white"}>Tasks</NavLink>
+            <NavLink onClick={()=>navigate(-1)} className="p-2 rounded-4xl text-white">Back</NavLink>
+
            
         </div>
     </div>
