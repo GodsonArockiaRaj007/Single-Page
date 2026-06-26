@@ -37,7 +37,7 @@ const Login = () => {
         <label className="font-semibold w-30 inline-block" htmlFor="email">Enter Email</label>:
         <input className="border-2 p-1 m-2 rounded-3xl" type="text" name="email" id="email" value={user.email} onChange={handleChange} /><br />
         <label className="font-semibold w-30 inline-block" htmlFor="password">Enter Password</label>:
-        <input className="border-2 p-1 m-2 rounded-3xl" type="text" name="password" id="password" value={user.password} onChange={handleChange} /><br />
+        <input className="border-2 p-1 m-2 rounded-3xl" type="password" name="password" id="password" value={user.password} onChange={handleChange} /><br />
         <input className="bg-purple-800 text-white font-bold p-3 rounded-2xl block mx-auto mt-2  w-30" type="submit" value="Login" name="" id="" />
         <span className="ml-15 mr-2">new user?</span><button type="button" className="bg-purple-800 text-white  font-bold p-1 rounded-2xl inline-block mx-auto mt-1 " onClick={()=>navigate("/Day12")}>Register</button>
 
