@@ -6,7 +6,7 @@ const Tasks = () => {
         <div className="flex justify-center">
             <h1 className="text-5xl font-bold text-center bg-purple-950 border-purple-950 border-3 shadow-2xs shadow-black text-white w-fit p-5 rounded-3xl mt-10 ">Tasks</h1>
         </div>
-        <div className="flex flex-col gap-5 items-center justify-center mt-10 ">
+        <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto mt-10">
             
               <Link className="bg-purple-950  font-bold text-2xl rounded-4xl w-fit p-4 text-white  transition duration-100 hover:scale-110" to='/Day1'>Day1</Link>
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day2'>Day2</Link>
@@ -20,6 +20,8 @@ const Tasks = () => {
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day9'>Day9</Link>
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day10'>Day10</Link>
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day11'>Day11</Link>
+            <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day12'>Day12</Link>
+
 
 
         </div>

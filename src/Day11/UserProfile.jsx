@@ -13,6 +13,9 @@ const UserProfile  = () => {
             alert("Enter all details before submitting")
             return
         }
+        const local=JSON.parse(localStorage.getItem("data"))
+        local.push(data)
+        
             setData((prev)=>[...prev,user])
             setUser({name:"",email:"",mobile:"",address:""})
     }
