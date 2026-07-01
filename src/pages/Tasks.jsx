@@ -21,7 +21,7 @@ const Tasks = () => {
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day10'>Day10</Link>
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day11'>Day11</Link>
             <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day12'>Day12</Link>
-
+            <Link className="bg-purple-950 text-white font-bold text-2xl rounded-4xl w-fit p-4     transition duration-100 hover:scale-110" to='/Day13'>Day13</Link>
 
 
         </div>
