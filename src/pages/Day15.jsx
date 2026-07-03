@@ -103,6 +103,64 @@ const Day15 = () => {
                     </div>
                 )):<h1>No Product Found</h1>
             }
+
+           
+        </div>
+        <div className="">
+                <h1 className="text-center text-5xl font-bold"> Beauty Products</h1>
+             <div className="flex flex-wrap">
+                
+                {data.filter((e)=>e.category=="beauty")
+                .map((e,i)=>(
+                    <div className="w-60 m-5 border-3 rounded-2xl border-purple-950 text-center" key={i}>
+                        <img src={e.thumbnail} alt={e.title} />
+                        <p className="font-bold">{e.title}</p>
+                        <p className="font-semibold">{e.category}</p>
+                        <p>${e.price}</p>
+                    </div>
+                ))}
+            </div>
+            <h1 className="text-center text-5xl font-bold"> Fragrances</h1>
+             <div className="flex flex-wrap">
+                
+                {data.filter((e)=>e.category=="fragrances")
+                .map((e,i)=>(
+                    <div className="w-60 m-5 border-3 rounded-2xl border-purple-950 text-center" key={i}>
+                        <img src={e.thumbnail} alt={e.title} />
+                        <p className="font-bold">{e.title}</p>
+                        <p className="font-semibold">{e.category}</p>
+                        <p>${e.price}</p>
+                    </div>
+                ))}
+            </div>
+            <h1 className="text-center text-5xl font-bold"> Furniture</h1>
+            <div className="flex flex-wrap">
+                
+                {data.filter((e)=>e.category=="furniture")
+                .map((e,i)=>(
+                    <div className="w-60 m-5 border-3 rounded-2xl border-purple-950 text-center" key={i}>
+                        <img src={e.thumbnail} alt={e.title} />
+                        <p className="font-bold">{e.title}</p>
+                        <p className="font-semibold">{e.category}</p>
+                        <p>${e.price}</p>
+                    </div>
+                ))}
+            </div>
+            <h1 className="text-center text-5xl font-bold"> Groceries</h1>
+             <div className="flex flex-wrap">
+                
+                {data.filter((e)=>e.category=="groceries")
+                .map((e,i)=>(
+                    <div className="w-60 m-5 border-3 rounded-2xl border-purple-950 text-center" key={i}>
+                        <img src={e.thumbnail} alt={e.title} />
+                        <p className="font-bold">{e.title}</p>
+                        <p className="font-semibold">{e.category}</p>
+                        <p>${e.price}</p>
+                    </div>
+                ))}
+            </div>
+
+
         </div>
 
     </div>
