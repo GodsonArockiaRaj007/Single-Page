@@ -93,7 +93,7 @@ const Day16 = () => {
                     <td className="rounded-l-3xl px-4 py-2 text-center">{i+1}</td>
                     <td className="text-center">{e.task}</td>
                     <td className="text-center"><button className="border-2 w-15 rounded-3xl p-1 bg-green-600 " onClick={()=>handleEdit(e.id)}>Edit</button></td>
-                    <td className=" rounded-r-3xl px-4 py-2 text-center"><button className="border-2 w-15 rounded-3xl p-1 bg-red-600" onClick={()=>handleDelete(e.id)}>Delete</button></td>
+                    <td className=" rounded-r-3xlyy px-4 py-2 text-center"><button className="border-2 w-15 rounded-3xl p-1 bg-red-600" onClick={()=>handleDelete(e.id)}>Delete</button></td>
                     
                 </tr>
              
