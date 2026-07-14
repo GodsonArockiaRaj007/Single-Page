@@ -39,7 +39,7 @@ const Task2 = () => {
     <div className={theme?"bg-black text-white":" bg-white text-black"}>
         <p>Box</p>
       </div>
-      <button onClick={handleClick}>{theme?"Dark":"Light"}</button>
+      <button className="border-2 w-fit p-2 rounded-2xl" onClick={handleClick}>{theme?"Dark":"Light"}</button>
     </>
   )
 }
